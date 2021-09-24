@@ -1,30 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
-import {PRODUCTS_DATA} from "./data/data";
-
-function ProductSize(props){
-    const{product} = props;
-    return <span className="productSize"> - {product.size}cl</span>
-}
-
-function ProductLine(props){
-    const{product} = props;
-    return <div>
-        <div className="productLine">
-            <div>{product.name}<ProductSize product = {product}/></div>
-            <div>{product.price}&euro;</div>
-        </div>
-        <div className="note">{product.note}</div>
-    </div>
-}
+import {CATEGORIES_DATA} from "./data/data";
+import {ProductCategory} from "./components/ProductCategory";
 
 function App() {
-  return (
-      <div>
-        <h1>Menu</h1>
-          {PRODUCTS_DATA.map(p => <ProductLine product={p}/>)}
-      </div>
-  );
+    return (
+        <div className="">
+            <h1>Menu</h1>
+            {CATEGORIES_DATA.map(c => <ProductCategory category={c} key={c.name}/>)}
+        </div>
+    );
 }
 
 export default App;

@@ -9,9 +9,12 @@ function ProductSize(props){
 
 function ProductLine(props){
     const{product} = props;
-    return <div className="productLine">
-        <div>{product.name}<ProductSize product = {product}/></div>
-        <div>{product.price}&euro;</div>
+    return <div>
+        <div className="productLine">
+            <div>{product.name}<ProductSize product = {product}/></div>
+            <div>{product.price}&euro;</div>
+        </div>
+        <div className="note">{product.note}</div>
     </div>
 }
 

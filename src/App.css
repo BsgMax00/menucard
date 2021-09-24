@@ -10,3 +10,7 @@ body {
 .productLine div {
   flex: 1;
 }
+
+.productSize {
+  font-size: 0.6em;
+}

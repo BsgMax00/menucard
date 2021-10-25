@@ -5,9 +5,9 @@ const COLORS_CAR_CSS = [
     {nameInCar: "blauw", backGroundColorInCss: "blue", colorInCss: "white"},
     {nameInCar: "geel", backGroundColorInCss: "yellow"},
     {nameInCar: "zwart", backGroundColorInCss: "black", colorInCss: "white"},
-    {nameInCar: "wit", backGroundColorInCss: "black"},
-    {nameInCar: "rood", backGroundColorInCss: "black", colorInCss: "white"},
-    {nameInCar: "grijs", backGroundColorInCss: "black"},
+    {nameInCar: "wit", backGroundColorInCss: "white"},
+    {nameInCar: "rood", backGroundColorInCss: "red", colorInCss: "white"},
+    {nameInCar: "grijs", backGroundColorInCss: "grey"},
 ];
 
 function styleColor(color) {

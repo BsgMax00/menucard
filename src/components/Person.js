@@ -2,8 +2,9 @@ import {Section} from "./Section";
 import {Card} from "./Card";
 
 export function Person(props) {
-    const {person} = props;
-    return <Card title={person.name}>
+    const {person, isFavorite} = props;
+    const extraClass = isFavorite ? "favoritePerson" : "";
+    return <Card title={person.name} extraClassName={extraClass}>
         <div>{person.age}</div>
         <div>{person.city}</div>
     </Card>;
